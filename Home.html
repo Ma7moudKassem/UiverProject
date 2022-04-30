@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kassem</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <script src="Home.js"></script>
+
+    <!-- <link rel="stylesheet" href="./libsCss/bootstrap.min.css">
+<script src="./libs/jq3.5.1.js" />
+<script src="./libs/popper.js" />
+<script src="./libs/bootstrap.min.js" /> -->
+
+</head>
+
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <!-- LOGO -->
+            <div class="logo">Kassem</div>
+            <!-- NAVIGATION MENU -->
+            <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+            <li>Home</li>
+            <li>Contact</li>
+            
+            
+            </div>
+            </ul>
+            </nav>
+        <aside class="left">
+            <img src="./me.jpg" width="160px" />
+            <ul>
+                <li><a class="active" href="#home">Home</a></li>
+                <li>
+                    <a href="gallary.html" title="Algorithm">Galary</a>
+
+                    <!-- <button onclick="" >Galary</button> -->
+                </li>
+                <li>
+                    <button>Contact</button>
+                </li>
+                <li>
+                    <button onclick="ShowTouster()">About Me</button>
+                </li>
+            </ul>
+            <br><br>
+        </aside>
+        <main class="content">
+
+            <h2>Education</h2>
+            <p>* - B+, FACULTY OF COMPUTER AND INFORMATION TANTA UNIVERSTY
+                Until now I have had a 3.3 GPA and I was honoured by the Head of the College two times</p>
+            <h2>EXPERIENCE</h2>
+            <p>
+                * - REACT NATIVE DEVELOPER AT INNO TECH COMPANY <br />
+                * - LEAD OF GOOGLE DEVELOPERS CLUB IN TANTA UNIVERSTY
+
+            </p>
+            <hr><br>
+            <h2>How Can I Help You?</h2>
+            <table>
+                <tr>
+                    <th>SKILL One</th>
+                    <th>SKILL Two</th>
+                    <th>SKILL Three</th>
+                </tr>
+                <tr>
+                    <td><i class="fas fa-broom"></i></td>
+                    <td><i class="fas fa-archive"></i></td>
+                    <td><i class="fas fa-trailer"></i></td>
+                </tr>
+                <tr>
+                    <td>Clean Code , Solid Principles</td>
+                    <td>Work Under Pressure</td>
+                    <td>Honest Free lancer</td>
+                </tr>
+                <tr>
+            </table>
+            <div id="content"></div>
+<form>
+            <textarea name="text-area" id="textArea" cols="30" rows="10"></textarea> </form>
+<button id="sectionbg">Change Erea</button>
+        </main>
+
+
+        <script>
+            var el = document.getElementById('content');
+            var content;
+
+            function ShowTouster() {
+                content = '<div class="TousterContainer"> <div class="touster"> <div style="width: 100%;display: flex;justify-content: space-between;"> <h2>About Me</h2> <button onclick="CloseTouster()"  style="color: #fff;border-width: 0px;background-color: #f00;border-radius: 100px;height: 30px;width: 30px;">  X  </button>  </div> <p>A software engineer; I have 1.5 years of experience in mobile application development. I built many  apps using react native framework to suit both platforms (ANDROID, IOS)And junior at Asp.net And  Blazor Web Assembly</p> </div></div>'
+                el.insertAdjacentHTML('beforebegin', content)
+            }
+        </script>
+
+
+        <footer class="footer">&copy; Copyright </sup>Mahmoud</footer>
+    </div>
+    <script src="changeBg.js"></script>
+
+</body>
+
+</html>
